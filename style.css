@@ -1,0 +1,112 @@
+/* style.css - Minimalist Modern for TOOQI */
+
+:root{
+  --green: #064E3B; /* hijau tua */
+  --black: #0A0A0A;
+  --white: #ffffff;
+  --muted: #6b7280;
+  --container: 1100px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  color:var(--black);
+  background:var(--white);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* layout */
+.container{
+  width:90%;
+  max-width:var(--container);
+  margin:0 auto;
+}
+
+/* NAV / HERO */
+.nav-left img.logo {
+  height: 99px;
+  display: block;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--white);
+  padding: 14px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* biar soft dan rapi */
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 90px;
+}
+.nav-actions a{margin-left:12px; text-decoration:none; font-weight:600}
+.btn{background:var(--green); color:var(--white); padding:10px 16px; border-radius:8px; text-decoration:none}
+.btn-outline{border:1px solid var(--green); padding:8px 14px; border-radius:8px; text-decoration:none; color:var(--green)}
+.btn-cta{display:inline-block; margin-top:18px; padding:12px 20px; background:var(--green); color:var(--white); border-radius:10px; text-decoration:none; font-weight:700}
+
+/* hero */
+.hero {
+  /* warna background */
+  background-color: #fffdf1;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-image img {
+  width: 240px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* sections */
+.section{padding:48px 0}
+.section h2{font-size:1.6rem; margin:0 0 12px}
+.muted{color:var(--muted)}
+
+/* about */
+.about{display:flex; gap:30px; align-items:flex-start}
+.about-text{flex:1}
+.about-stats{display:flex; gap:20px}
+.stat{background:#fff; border-radius:10px; padding:18px; box-shadow:0 6px 18px rgba(6,78,59,0.04); text-align:center}
+
+/* products grid */
+.products .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:18px; margin-top:18px}
+.card{background:#fff; border-radius:12px; padding:12px; text-align:center; box-shadow:0 8px 20px rgba(6,78,59,0.03)}
+.card img{width:100%; height:180px; object-fit:cover; border-radius:8px}
+.card h4{margin:10px 0 6px}
+.price{color:var(--green); font-weight:700}
+
+/* cta / footer */
+.cta-inner{display:flex; justify-content:space-between; align-items:center; gap:20px; background:linear-gradient(90deg, rgba(6,78,59,0.05), rgba(6,78,59,0.02)); padding:28px; border-radius:12px}
+.footer{margin-top:18px; text-align:center; color:var(--muted); padding:18px 0}
+
+/* responsive */
+@media (max-width:860px){
+  .hero-content{flex-direction:column-reverse; text-align:center}
+  .hero-image img{width:280px}
+  .about{flex-direction:column}
+  .cta-inner{flex-direction:column; text-align:center}
+}

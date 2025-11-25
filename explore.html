@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products Collection</title>
+  <style>
+    :root{
+      --green: #064E3B;
+      --black: #0A0A0A;
+      --white: #ffffff;
+      --muted: #6b7280;
+    }
+
+    body{
+      margin:0;
+      font-family: 'Inter', sans-serif;
+      background:#fff;
+      color:var(--black);
+    }
+
+    /* NAV */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--white);
+      padding: 14px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .nav-inner {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-img { height: 50px; }
+
+    .btn-cta {
+      background: var(--green);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero{
+      background:#fffdf1;
+      padding:80px 0;
+    }
+    .hero-inner{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:40px;
+    }
+    .hero h1{
+      font-size:2.8rem;
+      margin:0;
+    }
+    .hero p{
+      color:var(--muted);
+      max-width:460px;
+      line-height:1.5;
+    }
+    .hero-img{
+      width:380px;
+      border-radius:16px;
+      object-fit:cover;
+    }
+
+    /* PRODUCTS */
+    .section-title{
+      width:90%;
+      max-width:1100px;
+      margin:50px auto 20px;
+      font-size:2rem;
+    }
+
+    .grid{
+      width:90%;
+      max-width:1100px;
+      margin:20px auto 60px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+      gap:22px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 6px 16px rgba(0,0,0,0.05);
+      text-align:center;
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+
+    .card h3{ margin:12px 0 6px }
+    .price{ 
+      color:var(--green); 
+      font-weight:700; 
+      margin-bottom:10px 
+    }
+
+    .btn-shop{
+      display:inline-block;
+      background:var(--green);
+      color:white;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      margin-top:6px;
+    }
+
+    /* FOOTER */
+    .footer{
+      text-align:center;
+      padding:30px 0;
+      color:var(--muted);
+      margin-top:30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <img src="logo.png" class="logo-img">
+      <a href="index.html" class="btn-cta">Home</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>Products Collection</h1>
+        <p>Temukan berbagai fashion retro & Y2K dengan sentuhan minimalis modern khas TOOQI. 
+           Koleksi ini dibuat dengan kualitas terbaik untuk style yang simple tapi elegan.</p>
+      </div>
+
+      <img src="logotooqitransparan.png" class="hero-img">
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products">
+    <h2 class="section-title">PUDINGS</h2>
+
+<div class="grid">
+
+  <!-- PRODUK 1 -->
+  <div class="card">
+    <img src="foto product 1.png" alt="">
+    <h3>Puding Manggopongo</h3>
+    <p class="price">Rp 7.000</p>
+    <a href="https://wa.me/089528844495" class="btn-shop">Shop Now</a>
+  </div>
+
+  <!-- PRODUK 2 -->
+  <div class="card">
+    <img src="foto product 2.png" alt="">
+    <h3>Puding Pink Chill</h3>
+    <p class="price">Rp 7.000</p>
+    <a href="https://wa.me/089528844495" class="btn-shop">Shop Now</a>
+  </div>
+
+  <!-- PRODUK 3 -->
+  <div class="card">
+    <img src="foto product 3.png" alt="">
+    <h3>Puding Choco dot</h3>
+    <p class="price">Rp 7.000</p>
+    <a href="https://wa.me/089528844495" class="btn-shop">Shop Now</a>
+  </div>
+
+  <!-- PRODUK 4 -->
+  <div class="card">
+    <img src="foto product 4.png" alt="">
+    <h3>Puding Varo</h3>
+    <p class="price">Rp 7.000</p>
+    <a href="https://wa.me/089528844495" class="btn-shop">Shop Now</a>
+  </div>
+
+  <!-- PRODUK 5 -->
+  <div class="card">
+    <img src="coming soon.png" alt="">
+    <h3>SOON</h3>
+    <p class="price">Rp 0</p>
+    <a href="#" class="btn-shop">SOON</a>
+  </div>
+
+  <!-- PRODUK 6 -->
+  <div class="card">
+    <img src="coming soon.png" alt="">
+    <h3>SOON</h3>
+    <p class="price">Rp 0</p>
+    <a href="#" class="btn-shop">SOON</a>
+  </div>
+
+    <!-- PRODUK 7 -->
+  <div class="card">
+    <img src="coming soon.png" alt="">
+    <h3>SOON</h3>
+    <p class="price">Rp 0</p>
+    <a href="#" class="btn-shop">SOON</a>
+  </div>
+
+    <!-- PRODUK 8 -->
+  <div class="card">
+    <img src="coming soon.png" alt="">
+    <h3>SOON</h3>
+    <p class="price">Rp 0</p>
+    <a href="#" class="btn-shop">SOON</a>
+  </div>
+
+</div>
+  </section>
+
+  <div class="footer">
+    © 2025 TOOQI — All rights reserved.
+  </div>
+
+</body>
+</html>
